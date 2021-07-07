@@ -7,6 +7,8 @@ To monitor weather tables are being written to and to output an binary result:<b
 1 - if tabel is being activley written to.<br />
 0 - if table is not being activley written to.
 
+If the Table is empty the script completes successfully but returnes no result.
+
 ### **Description of the different scripts**
 
 ***CompareDB_30_min_UTC_print.sql*** - checkes running count field now and 30 minutes ago in **UTC** time.
