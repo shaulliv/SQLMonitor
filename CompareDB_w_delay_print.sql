@@ -12,6 +12,6 @@ select top 1 @segid2=[RunningCountField] from [DBName] order by startdatetime de
 --debugging line
 --SELECT @segid2,@segid1
 IF (@segid1 != @segid2)
-	PRINT 1;
+	PRINT '1'
 ELSE IF (@segid1 = @segid2)
-	PRINT 0;
+	PRINT '0'
