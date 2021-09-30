@@ -5,7 +5,7 @@ outputs results as select */
 declare @ivr1 int
 declare @ivr2 int
 select top 1 @ivr1=[RunningCountField] from [DBName] order by Id desc
-select top 1 @ivr2=[RunningCountField] from [DBName] where dateandtime < dateadd(minute, -30, GETDATE()) order by Id desc
+select top 1 @ivr2=[RunningCountField] from [DBName] where [dateandtime] < dateadd(minute, -30, GETDATE()) order by Id desc
 --debbuging line
 --select @ivr1,@ivr2
 IF (@ivr1 != @ivr2)
